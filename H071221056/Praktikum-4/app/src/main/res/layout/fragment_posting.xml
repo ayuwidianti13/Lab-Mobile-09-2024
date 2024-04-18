@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.PostingFragment"
+    android:background="#F7E7C1">
+
+    <RelativeLayout
+        android:id="@+id/rv_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A88046">
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="335dp"
+            android:layout_height="40dp"
+            android:text="Add Post"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#3E2B10"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_konten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konten"
+        android:textSize="24sp"
+        android:textColor="#3E2B10"
+        android:textStyle="bold"
+        android:layout_below="@id/rv_header"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tv_konten2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_konten"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_konten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Konten..." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gambar"
+        android:textColor="#3E2B10"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_konten2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_gambar"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/tv_gambar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="@color/white">>
+
+        <ImageView
+            android:id="@+id/iv_gambar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_posting"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_gambar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#8C5C39"
+        android:text="Posting"
+        android:textSize="20sp"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/activity_main" />
+
+</RelativeLayout>
