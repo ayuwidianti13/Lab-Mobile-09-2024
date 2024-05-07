@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/im_regis"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/regiss"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:id="@+id/TV_regis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="#445D48"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@id/im_regis"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TV_regis"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="#ECE3CE"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:paddingTop="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="356dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ET_nimRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIM" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="356dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ET_passwordRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:textColor="#ECE3CE"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#445D48"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
